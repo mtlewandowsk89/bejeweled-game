@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    place-items: center;
+}
+
+#gridArea {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    animation-duration: 0.5s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+    from {right: 0px;}
+    to {right: 50px;}
+}
+
+@keyframes slideRight {
+    from {left: 0px;}
+    to {left: 50px;}
+}
+
+@keyframes slideUp {
+    from {bottom: 0px;}
+    to {bottom: 50px;}
+}
+
+@keyframes slideDown {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+
+@keyframes shrink {
+    from {width: 40px; height: 40px; border: 1px solid black;}
+    to {width: 0px; height: 0px; border: none;}
+}
