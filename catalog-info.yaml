@@ -1,0 +1,21 @@
+apiVersion: bejeweled/v1
+kind: Component
+metadata:
+  name: bejeweled
+  description: Fun game
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: custom
+    circleci.com/project-slug: github/bejeweled-game
+  tags:
+    - javascript
+  links:
+    - url: https://github.com/mtlewandowsk89/bejeweled-game
+      title: Admin Dashboard
+      icon: dashboard
+spec:
+  type: website
+  lifecycle: development
+  owner: Matt L
+  system: public-websites
